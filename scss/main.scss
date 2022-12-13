@@ -1,15 +1,14 @@
 @import "abstracts/variables";
 
+@import "base/reset";
+
+
+@import "base/typography";
 
 @import "components/card";
 
-
-@import "base/reset";
-@import "base/typography";
-
-
-
 @import "layout/header";
 
-
 @import "pages/home";
+
+// Comentario

@@ -19,6 +19,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .navbar {
@@ -33,7 +34,6 @@ body {
 }
 .navbar__menu-label {
   color: rgb(255, 255, 255);
-  margin-left: auto;
   height: 42px;
   background-color: orangered;
   width: 42px;
@@ -101,20 +101,38 @@ body {
   padding: 1.25rem 1rem;
 }
 .navbar__nav-item:not(:last-child) {
-  border-bottom: 1px solid rgb(156, 156, 156);
+  border-bottom: 2px solid rgb(156, 156, 156);
 }
 .navbar__nav-link {
   color: rgb(255, 255, 255);
 }
-.main-nav .nav-links .nav-item.active {
-  color: cornflowerblue;
-  font-weight: bold;
+
+.user-navbar {
+  margin-left: auto;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0 1rem;
 }
-.main-nav .nav-links .nav-item:hover {
-  font-size: 1.2rem;
-  color: darkred;
+.user-navbar__user-avatar {
+  width: 40px;
 }
 
+@media screen and (min-width: 600px) {
+  .navbar__menu-label, .navbar__menu-btn {
+    display: none;
+  }
+  .navbar__nav-links-container {
+    position: static;
+    flex-direction: row;
+    height: 100% !important;
+    width: auto;
+  }
+  .user-navbar {
+    order: 3;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -149,15 +167,10 @@ body {
 @media screen and (min-width: 600px) {
   .footer {
     flex-direction: row;
-
-@media screen and (min-width: 600px) {
-  .navbar__menu-label, .navbar__menu-btn {
-    display: none;
   }
-  .navbar__nav-links-container {
-    position: static;
-    flex-direction: row;
-    height: 100% !important;
-    width: auto;
-  }
+}
+.main {
+  margin-top: 50px;
+  padding: 1.5rem;
+  background-color: aliceblue;
 }

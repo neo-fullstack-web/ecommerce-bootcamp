@@ -16,7 +16,15 @@
             <a href="/index.html" class="navbar__nav-link">
                 <img class="navbar__logo" src="/assets/images/logo.png" alt="Logo del ecommerce">
             </a>
-
+            <div class="user-navbar">
+                <div class="user-navbar__cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="user-navbar__user-avatar-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                </div>
+                <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
             
             <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
 
@@ -40,16 +48,10 @@
                 </li>
             </ul>
         </nav>
-        <div class="user-navbar">
-            <div class="user-navbar__cart-icon-container">
-                <!-- TODO: add font icon and icon item -->
-                IC
-            </div>
-            <!-- TODO: avatar de la persona logueada o nombre -->
-        </div>
+        
     </header>
     <!-- TODO: Implementar carousel en 2do módulo -->
-    <main>
+    <main class="main">
         <section class="section-cards">
             <header class="section-cards__header">
                 <div class="section-cards__title-container">

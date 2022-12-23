@@ -118,6 +118,10 @@ body {
 .user-navbar__user-avatar {
   width: 40px;
 }
+.user-navbar__cart-icon-container {
+  color: orange;
+  font-size: 1.5rem;
+}
 
 @media screen and (min-width: 600px) {
   .navbar__menu-label, .navbar__menu-btn {

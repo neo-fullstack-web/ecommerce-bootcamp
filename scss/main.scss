@@ -1,12 +1,17 @@
+// ABSTRACTS
 @import "abstracts/variables";
-
+@import "abstracts/utilities";
+// BASE
 @import "base/reset";
-
 @import "base/typography";
 
+
+// COMPONENTS
 @import "components/card";
+@import "components/radio_checkbox";
 
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/register";

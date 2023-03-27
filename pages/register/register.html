@@ -35,15 +35,21 @@
                 <label for="age">Edad:</label>
                 <input type="number" step=".1" id="age" name="age" required>
             </div>
-            <label for="gender">Gender:</label>
-            <div class="input-group">
-                <div class="radio-container">
-                    <input type="radio" id="genderM" name="gender"  value="male" checked> <label for="genderM">Masculino</label>
-                </div>
-                <div class="radio-container">
-                    <input type="radio" id="genderF" name="gender" value="female"> <label for="genderF">Femenino</label>
+            <div class="flex">
+                <label for="gender">Gender:</label>
+                <div class="input-group">
+                    <div class="radio-container">
+                        <input type="radio" id="genderM" name="gender"  value="male" checked> <label for="genderM">Masculino</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="genderF" name="gender" value="female"> <label for="genderF">Femenino</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" id="other" name="gender" value="other"> <label for="genderF">Otro</label>
+                    </div>
                 </div>
             </div>
+            
             <br>
             <button type="submit" class="btn">Enviar</button>
         </form>

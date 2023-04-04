@@ -20,13 +20,18 @@ loginForm.addEventListener('submit', (event) =>  {
     }) // { name, password, email, }
     
     if(!user || user.password !== password.value) {
-        alert('Los Datos ingresados no son correctos');
+        showAlert('Login incorrecto', 'error')
         return;
     }
 
     
     localStorage.setItem('currentUser', JSON.stringify(user));
-    alert(`Login correcto`)
+    //TODO: insertar alerta custom
+    showAlert('Login correcto te redireccionaremos en unos instantes...')
+
+    setTimeout(() => {
+        window.location.href = '/';
+    }, 1500)
 
 });
     //a- Email que me ingreso lo tiene algún usuario de mi array

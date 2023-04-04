@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.hidden {
+    opacity: 0 !important;
+}
+
 // FORM
 .container {
     max-width: 1081px;
@@ -13,11 +17,11 @@
 }
 
 
-.container [class*="-form"] {
+.container form[class*="-form"] {
     padding: 2rem;
 } 
 
-.container [class*="-form"] input:not([type="radio"]) {
+.container form[class*="-form"] input:not([type="radio"]) {
     width: 100%;
     font-size: 1.25rem;
     font-family: monospace;

@@ -19,9 +19,13 @@
             <div class="user-navbar">
                 <div class="user-navbar__cart-icon-container">
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="user-navbar__cart-badge" id="cart-count">0</div>
                 </div>
                 <div class="user-navbar__user-avatar-container">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    <a href="/pages/order/order.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </a>
+                    
                 </div>
                 <!-- TODO: avatar de la persona logueada o nombre -->
             </div>
@@ -33,7 +37,7 @@
             </label>
 
 
-            <ul class="navbar__nav-links-container">
+            <ul class="navbar__nav-links-container" id="navbar-list">
                 <li class="navbar__nav-item">
                     <a href="/index.html" class="navbar__nav-link">Inicio</a>
                 </li>
@@ -81,7 +85,7 @@
             <h1 class="section-cards__category">
                 CATEGORÍA: OFERTAS
             </h1>
-            <div class="cards-container">
+            <div class="cards-container" id="card-container">
                 <article class="card">
                     <div class="card__header">
                         <img src="#" alt="Product Image" class="card__img">
@@ -108,84 +112,7 @@
                         </div>
                     </div>
                 </article>             
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product Image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iusto repellendus laudantium expedita nesciunt dolores. Culpa consequuntur doloribus ab aperiam?
-                        </p>
-                        <div class="card__price">
-                            $ 20000
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article> 
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product Image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iusto repellendus laudantium expedita nesciunt dolores. Culpa consequuntur doloribus ab aperiam?
-                        </p>
-                        <div class="card__price">
-                            $ 8000
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article> 
-                <article class="card">
-                    <div class="card__header">
-                        <img src="#" alt="Product Image" class="card__img">
-                    </div>
-                    <div class="card__body">
-                        <div class="card__title">
-                            PRODUCT NAME
-                        </div>
-                        <p class="card__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iusto repellendus laudantium expedita nesciunt dolores. Culpa consequuntur doloribus ab aperiam?
-                        </p>
-                        <div class="card__price">
-                            $ XXXXX
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__date">
-                            13/12/2022
-                        </div>
-                        <div class="card__btn-container">
-                            <a class="card__btn" href="#">
-                                Detalle
-                            </a>
-                        </div>
-                    </div>
-                </article> 
+
             </div>
 
         </section>
@@ -255,6 +182,8 @@
         </div>
     </footer>
     
+    <script src="/js/index.js"></script>
     <script src="/js/header.js"></script>
+    <script src="/js/orders.js"></script>
 </body>
 </html>

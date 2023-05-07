@@ -41,7 +41,8 @@ registerForm.addEventListener('submit', (event)=> {
         age: el.age.value,
         password: el.password1.value,
         email: el.email.value,
-        gender: el.gender.value
+        gender: el.gender.value,
+        role: 'USER_ROLE'
     }
 
     //e- insertar en mi array de usuarios el nuevo user (lista de usuarios)
